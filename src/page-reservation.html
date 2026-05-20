@@ -16,14 +16,67 @@
   <body>
     <load src="./partials/header.html" highlight-reservation="active" />
 
-    <main>
-      <div class="container">
-        <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> Reservation
-        </h1>
-        <load src="./partials/back-link.html" />
-      </div>
-    </main>
+    <div id="meta_container">
+          
+        <h1>book a table</h1>
+
+
+    <form id="reservation_form">             
+           <h2>booking info</h2>
+
+<div id="booking_info">
+
+    <div class="input_group">
+        <label for="people">no of people</label>
+        <input id="people" type="number">
+    </div>
+
+    <div class="input_group">
+        <label for="date">date</label>
+        <input id="date" type="date">
+    </div>
+
+    <div class="input_group">
+        <label for="time">time</label>
+        <input id="time" type="time">
+    </div>
+
+</div>
+
+
+<h2>personal info</h2>
+
+<div id="personal_info">
+
+    <div class="input_group">
+        <label for="fullname">full name</label>
+        <input id="fullname" type="text">
+    </div>
+
+    <div class="input_group">
+        <label for="email">email</label>
+        <input id="email" type="email">
+    </div>
+
+    <div class="input_group">
+        <label for="phone">phone number</label>
+        <input id="phone" type="tel">
+    </div>
+
+</div>
+
+           <button type="submit">book now</button>
+            <p id="error_message"></p>
+        </form>
+
+
+    </div>
+
+
+
+
+<script src="main.js" type="module"></script>
+
 
     <load src="./partials/footer.html" />
   </body>
