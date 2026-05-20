@@ -1,0 +1,97 @@
+/* contact */
+
+.contactSection{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:120px;
+  padding:80px 60px;
+  flex-wrap:wrap;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.65),
+    rgba(0,0,0,0.65)),
+    url("../img/contact/background.png") no-repeat;
+
+  background-size:cover;
+  background-position:center;
+  color:white;
+  font-family:'Cormorant Garamond', serif;
+  min-height:100vh;
+}
+
+/* left */
+
+.contactCardContainer{
+  position:relative;
+}
+
+.contactCard{
+  width:340px;
+  min-height:650px;
+  background:#dcca87;
+  color:black;
+  border-radius:15px;
+  padding:90px 40px;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  gap:40px;
+}
+
+.contactCard h2{
+  font-size:2rem;
+  text-decoration:underline;
+  color: black;
+}
+
+.contactCard p{
+  font-size:1.5rem;
+  line-height:1.6;
+  color: black;
+}
+
+/* .waxSeal{
+  position:absolute;
+  width:110px;
+  top:-50px;
+  left:50%;
+  transform:translateX(-50%);
+} */
+
+.handImage{
+  position:absolute;
+  width:30%;
+  bottom:-110px;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+/* right */
+
+.imageFrame{
+  position:relative;
+  width:450px;
+  height:620px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.frame{
+  position:absolute;
+  width:100%;
+  height:100%;
+  border:40px solid #dcca87;
+  z-index:1;
+}
+
+.drinkImage{
+  width:80%;
+  height:85%;
+  object-fit:cover;
+  z-index:2;
+  position:relative;
+}

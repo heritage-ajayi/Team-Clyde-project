@@ -1,4 +1,4 @@
-.header {
+/* .header {
   padding: 20px 0;
 }
 .nav {
@@ -41,4 +41,103 @@
 }
 .nav-link.active::after {
   background: #747bff;
+} */
+
+
+/* individal header */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#000;
+  font-family:'Cormorant Garamond', serif;
+  color:white;
+}
+
+/* header */
+
+.navbar{
+  width:100%;
+  border:1px solid #dcca87;
+  background:black;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:18px 30px;
+}
+
+.logo{
+  font-size:2rem;
+  font-weight:600;
+  letter-spacing:1px;
+}
+
+.nav-links{
+  display:flex;
+  gap:25px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:white;
+  font-size:1.2rem;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#dcca87;
+}
+
+.hamburger{
+  display:none;
+  font-size:2rem;
+  cursor:pointer;
+}
+
+/* responsiveness */
+
+@media (max-width: 900px){
+
+  .nav-links{
+    display:none;
+  }
+
+  .hamburger{
+    display:block;
+  }
+
+  .hero{
+    height:70vh;
+  }
+
+  .footer{
+    flex-direction:column;
+    text-align:center;
+    padding:30px 20px;
+  }
+
+  .footer-socials,
+  .footer-center,
+  .footer-text{
+    width:100%;
+  }
+
+  .footer-center h2{
+    margin-top:10px;
+    font-size:2.5rem;
+  }
+
+  .footer-text{
+    font-size:1rem;
+    line-height:1.6;
+  }
+
+  .logo{
+    font-size:1.8rem;
+  }
 }
